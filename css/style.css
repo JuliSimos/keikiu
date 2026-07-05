@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;900&family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
+
+/* ESTILOS GLOBALES */
+:root{
+/* Colores Principales (Paleta de la pastelería) */
+    --color-principal: #ef7102;
+    --color-secundario: #603022;
+    --color-fondo: #EFEFEF;       
+    --color-texto: #000;
+    --color-blanco: #ffffff;
+
+    /* Tipografías (Fuentes) */
+--fuente-subtitulos: "Reenie Beanie", sans-serif;
+--fuente-cuerpo: "Montserrat", sans-serif;
+}
+
+/* ESTILOS BASES Y MOBILE (Por defecto)*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", "sans-serif";
+}
+
+
+body{
+    background-color: var(--color-fondo); 
+    color: var(--color-texto);
+}
+.font-reenie {
+    font-family: var(--fuente-subtitulos);
+    font-size: 2.50rem;
+    font-weight: 400
+}
+.orange {
+    color: var(--color-principal);
+}
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-texto);
+}
+
+/* ESTILOS PARA ESCRITORIO (Desktop)*/
+@media only screen and (min-width:660px) {
+
+}

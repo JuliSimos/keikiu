@@ -7,59 +7,86 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <div-><a href="#">keikiu</a></div->
-        <nav>
-            <ul>
-                <li>cátalogo</li>
-                <li>sobre nosotros</li>
-                <li>contáctanos</li>
-            </ul>
+    <header class="header">
+        <nav class=" navbar">
+            <a href="#" class="logo logo--navbar">keikiu</a>
+                <ul class="navbar__list">
+                    <li><a href="#" class="navbar__link">cátalogo</a></li>
+                    <li><a href="#" class="navbar__link">sobre nosotros</a></li>
+                    <li><a href="#" class="navbar__link text-accent">contáctanos</a></li>
+                </ul>
         </nav>
     </header>
 <main>
-    <section id="hiro">
-        <h1>¡sensaciones unicas en un solo bocado!</h1>
-        <p>keikiu, lugar de los mas esplendidos sabores, contamos con una gran variedad de propuestas para satisfacer todo tipo de gustos</p>
-        <a href=""><button id="btn-catalogo">ver catalogo</button></a>
+
+    <section class="hero">
+        <div class="hero__info">
+            <h1 class="hero__title">¡sensaciones únicas en un solo bocado!</h1>
+            <p class="hero__text">keikiu, lugar de los más espléndidos sabores, contamos con una gran variedad de propuestas para satisfacer todo tipo de gustos</p>
+            <a href="#"class="button hero__button">ver catálogo</a>
+        </div>
     </section>
-    <section id="info">
-        <h2 class="font-reenie">¿Que hacemos?</h2>
-        <figure>
-            <div>
-                <figcaption>pasteleria</figcaption>
-            </div>
-            <div>
-                <figcaption>donas</figcaption>
-            </div>
-            <div>
-                <figcaption>tortas</figcaption>
-            </div>
-            <div>
-                <figcaption>panes</figcaption>
-            </div>
-            <div>
-                <figcaption>tartas</figcaption>
-        </figure>
+        
+    <section class="categories-menu">
+        <h2 class="subtitle">¿Que hacemos?</h2>
+        <ul class="categories-menu__list">
+            <li class="categories-menu__item">
+                <a href="#" class="categories-menu__link">
+                    <img class="categories-menu__image" src="/recursos/imagenes/pasteleria.png" alt="Pasteleria">
+                    <span class="categories-menu__title">pasteleria</span>
+                </a>
+            </li>
+            <li class="categories-menu__item">
+                <a href="#" class="categories-menu__link">
+                    <img class="categories-menu__image" src="/recursos/imagenes/donas.png" alt="Donas">
+                    <span class="categories-menu__title">Donas</span>
+                </a>
+            </li>
+            <li class="categories-menu__item">
+                <a href="#" class="categories-menu__link">
+                    <img class="categories-menu__image" src="/recursos/imagenes/tortas.png" alt="Tortas">
+                    <span class="categories-menu__title">tortas</span>
+                </a>
+            </li>
+            <li class="categories-menu__item">
+                <a href="#" class="categories-menu__link">
+                    <img class="categories-menu__image" src="/recursos/imagenes/panes.png" alt="Panes">
+                    <span class="categories-menu__title">panes</span>
+                </a>
+            </li>
+            <li class="categories-menu__item">
+                <a href="#" class="categories-menu__link">
+                    <img class="categories-menu__image" src="/recursos/imagenes/tartas.png" alt="Tartas">
+                    <span class="categories-menu__title">tartas</span>
+                </a>
+            </li>
+        </ul>
     </section>
 
     <section id="form-contacto">
         <div>
-            <h2 class="font-reenie ">¿Buscabas algo mas?</h2>
-            <h2 class="font-reenie ">¡Contactanos!</h2>
+            <h2 class="subtitle ">¿Buscabas algo mas?</h2>
+            <h2 class="subtitle text-accent">¡Contactanos!</h2>
         </div>
         <form action="">
+
             <p>selecciona el asunto de tu consulta</p>
             <ul>
-                <a href=""><li>pedido personalizado</li></a>
-                <a href=""><li>busco un proveedor</li></a>
-                <a href=""><li>otro</li></a>
+                <li><a href="#">pedido personalizado</a></li>
+                <li><a href="#">busco un proveedor</a></li>
+                <li><a href="#">otro</a></li>
             </ul>
+
             <p>datos de contacto</p>
             <div>
-                <input type="text">
-                <input type="text">
-                <input type="text">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre" required autocomplete="name">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Email" required autocomplete="email">
+
+                <label for="telefono">Telefono</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="Télefono" required autocomplete="tel">
             </div>
             <p id="nro-captcha"></p>
             <p>Ingrese el numero aleatorio dentro de la casilla vacia</p>
@@ -75,7 +102,7 @@
         <p>Copyright &copy - Keikiu 2026</p>
     </footer>
 
-</main>
+</main> 
 
     <script src="js/header.js"></script>
 </body>
